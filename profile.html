@@ -1,288 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio | Profile</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#eef2ff 0%,#93c5fd 100%);
-    min-height:100vh;
-}
-
-nav{
-    background:#1e293b;
-    padding:18px;
-    box-shadow:0 4px 12px rgba(15,23,42,0.08);
-}
-
-nav ul{
-    display:flex;
-    justify-content:center;
-    list-style:none;
-    gap:35px;
-}
-
-nav a{
-    color:#e2e8f0;
-    text-decoration:none;
-    font-weight:600;
-    letter-spacing:0.5px;
-    transition:all 0.3s ease;
-}
-
-nav a:hover{
-    color:#38bdf8;
-    text-shadow:0 0 8px rgba(56,189,248,0.4);
-    transform:translateY(-2px);
-}
-
-.container{
-    max-width:1000px;
-    margin:50px auto;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 20px 50px rgba(147,197,253,0.25);
-    border:1px solid rgba(147,197,253,0.3);
-}
-
-h1{
-    text-align:center;
-    color:#1e3a8a;
-    font-size:2.5rem;
-    margin-bottom:30px;
-    font-weight:700;
-}
-
-/* SECTION BOX */
-
-.section-box{
-    background:#f8fbff;
-    border:2px solid #bfdbfe;
-    border-radius:20px;
-    padding:25px;
-    margin-bottom:30px;
-    position:relative;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(147,197,253,0.15);
-    transition:0.3s ease;
-}
-
-.section-box:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(59,130,246,0.2);
-}
-
-/* BUNGA HIASAN */
-
-.section-box::before{
-    content:"❀";
-    position:absolute;
-    top:10px;
-    right:15px;
-    font-size:70px;
-    color:rgba(59,130,246,0.12);
-}
-
-.section-box::after{
-    content:"✿";
-    position:absolute;
-    bottom:10px;
-    left:15px;
-    font-size:50px;
-    color:rgba(147,197,253,0.15);
-}
-
-/* TABLE */
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:10px;
-    overflow:hidden;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(147,197,253,0.1);
-}
-
-th{
-    background:#2563eb;
-    color:white;
-    padding:14px;
-    font-weight:600;
-    text-align:left;
-}
-
-td{
-    padding:14px;
-    border:1px solid #e2e8f0;
-    color:#475569;
-    background:#ffffff;
-}
-
-tr:nth-child(even) td{
-    background:#f8fafc;
-}
-
-/* SECTION TITLE */
-
-.section-title{
-    margin-bottom:15px;
-    color:#2563eb;
-    font-size:1.5rem;
-    position:relative;
-    display:inline-block;
-}
-
-.section-title::after{
-    content:'';
-    display:block;
-    width:40px;
-    height:3.5px;
-    background:#93c5fd;
-    border-radius:2px;
-    margin-top:5px;
-}
-
-ul{
-    margin-left:25px;
-    line-height:2;
-    color:#475569;
-}
-
-ul li{
-    margin-bottom:4px;
-}
-
-p{
-    line-height:1.8;
-    color:#475569;
-    font-size:1.05rem;
-}
-
-footer{
-    margin-top:80px;
-    background:#1e293b;
-    color:#94a3b8;
-    text-align:center;
-    padding:20px;
-    font-size:0.9rem;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="game.html">Game</a></li>
-</ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
+    <div class="page-wrapper">
+        <h1 class="page-title">Professional Profile</h1>
 
-<h1>Professional Profile</h1>
+        <div class="section-box">
+            <h2 class="section-title">Educational Background</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Qualification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025 - Present</td>
+                        <td>TVET MARA Petaling Jaya</td>
+                        <td>Diploma in Electronic Engineering (Internet of Things)</td>
+                    </tr>
+                    <tr>
+                        <td>2020 - 2024</td>
+                        <td>SMK Dato' Mustaffa</td>
+                        <td>Sijil Pelajaran Malaysia (SPM)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-<div class="section-box">
+        <div class="section-box">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li>HTML, CSS and JavaScript</li>
+                <li>Internet of Things (IoT) & ESP32 Programming</li>
+                <li>Arduino Development & Sensor Integration</li>
+                <li>ThingSpeak & Cloud Data Integration</li>
+                <li>Problem Solving and Troubleshooting</li>
+                <li>Microsoft Office Applications</li>
+            </ul>
+        </div>
 
-<h2 class="section-title">
-Educational Background
-</h2>
+        <div class="section-box">
+            <h2 class="section-title">Achievements</h2>
+            <ul class="achievements-list">
+                <li>Completed Pet Feeder Project</li>
+                <li>Developed IoT-based Smart Monitoring Systems</li>
+                <li>Participated in Engineering Innovation Activities</li>
+                <li>Successfully completed web development assignments and projects</li>
+            </ul>
+        </div>
 
-<table>
+        <div class="section-box">
+            <h2 class="section-title">Career Objectives</h2>
+            <p>
+                Seeking a challenging role as a Software Developer that allows me to leverage my background in 
+                Electronic Engineering (IoT) and passion for coding. I aim to contribute to building reliable, 
+                high-quality software solutions while continuously enhancing my skill set in a professional development environment.
+            </p>
+        </div>
+    </div>
 
-<tr>
-<th>Year</th>
-<th>Institution</th>
-<th>Qualification</th>
-</tr>
-
-<tr>
-<td>2025 - Present</td>
-<td>TVET MARA Petaling Jaya</td>
-<td>Diploma in Electronic Engineering (Internet of Things)</td>
-</tr>
-
-<tr>
-<td>2020 - 2024</td>
-<td>SMK Dato' Mustaffa</td>
-<td>Sijil Pelajaran Malaysia (SPM)</td>
-</tr>
-
-</table>
-
-</div>
-
-<div class="section-box">
-
-<h2 class="section-title">
-Skills
-</h2>
-
-<ul>
-<li>HTML, CSS and JavaScript</li>
-<li>Internet of Things (IoT)</li>
-<li>ESP32 Programming</li>
-<li>Arduino Development</li>
-<li>ThingSpeak Integration</li>
-<li>Sensor and Actuator Integration</li>
-<li>Problem Solving and Troubleshooting</li>
-<li>Microsoft Office Applications</li>
-</ul>
-
-</div>
-
-<div class="section-box">
-
-<h2 class="section-title">
-Achievements
-</h2>
-
-<ul>
-<li>Completed Pet Feeder Project</li>
-<li>Developed IoT-based Smart Monitoring Systems</li>
-<li>Participated in Engineering Innovation Activities</li>
-<li>Successfully completed web development assignments and projects</li>
-</ul>
-
-</div>
-
-<div class="section-box">
-
-<h2 class="section-title">
-Career Objectives
-</h2>
-
-<p>
-Seeking a challenging role as a Software Developer that allows me to
-leverage my background in Electronic Engineering (IoT) and passion for
-coding. I aim to contribute to building reliable, high-quality software
-solutions while continuously enhancing my skills in modern programming
-frameworks.
-</p>
-
-</div>
-
-</div>
-
-<footer>
-<p>
-© 2026 My Personal Portfolio Website
-</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Qistina Najwa | DFI20433 Web Development</p>
+    </footer>
 
 </body>
 </html>
